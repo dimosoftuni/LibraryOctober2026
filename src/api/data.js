@@ -1,7 +1,7 @@
 import * as api from './api.js';
 
-const host = 'http://localhost:3030'
-api.settings.host = 'http://localhost:3030';
+const host = 'https://library-be-slt0.onrender.com'
+api.settings.host = 'https://library-be-slt0.onrender.com';
 
 export const login = api.login;
 export const register = api.register;
