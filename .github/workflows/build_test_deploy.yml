@@ -23,7 +23,13 @@ jobs:
       run: npm install
     - name: Start Backend
       run: npm run start-be &
+    - name: Wait for backend to be ready
+      run: sleep 3
     - name: Start FrontEnd
       run: npm run start-fe &
+    - name: Wait for frontend to be ready
+      run: sleep 3
+    - name: Install the Playwright Browsers
+      run: npx playwright install
     - name: Run the UI Tests
       run: npm run test
